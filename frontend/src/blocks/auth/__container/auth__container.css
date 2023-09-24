@@ -1,0 +1,12 @@
+.auth__container {
+  margin: auto;
+  width: 358px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 550px) {
+  .auth__container {
+    width: 260px;
+  }
+}

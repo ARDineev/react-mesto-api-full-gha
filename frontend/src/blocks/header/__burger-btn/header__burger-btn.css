@@ -1,0 +1,7 @@
+.header__burger-btn {
+  cursor: pointer;
+}
+
+.header__burger-btn:hover {
+  opacity: 0.8;
+}

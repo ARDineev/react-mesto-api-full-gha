@@ -1,0 +1,14 @@
+.header__email-caption {
+  margin: 0 24px 0 0;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+@media screen and (max-width: 550px) {
+  .header__email-caption {
+    margin: 40px auto 0;
+  }
+}
