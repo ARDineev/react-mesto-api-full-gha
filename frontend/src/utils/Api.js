@@ -67,11 +67,8 @@ class Api {
 
 export const api = new Api({
   //объект для взаимодействия с сервером
-  //baseUrl: 'https://mesto.nomoreparties.co/v1/cohort-69',
-  baseUrl: 'http://localhost:3001',
-  //export const BASE_URL = 'http://localhost:3001';
+  baseUrl: 'https://api.mesto-cats.nomoredomainsrocks.ru',
   headers: {
- //   authorization: 'fabf3491-9d70-415a-b8dd-c9dde5f7947e',
     'Content-Type': 'application/json'
   }
 })
