@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import AuthForm from './AuthForm';
 import { useNavigate } from 'react-router-dom';
 import * as auth from '../utils/auth';
-import { api } from '../utils/Api';
 
 function Login(props) {
 

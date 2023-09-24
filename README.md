@@ -9,7 +9,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 51.250.16.33
+IP 51.250.16.33
 
 Frontend https://mesto-cats.nomoredomainsrocks.ru/
 

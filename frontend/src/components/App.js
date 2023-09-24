@@ -71,10 +71,11 @@ function App() {
 
   function logInByToken() {
     const token = localStorage.getItem('token');
+    
     if (token) {
       auth.getUserInfo(token)
         .then((res) => {
-          if (res.data) {
+          if (res) {
             setLoggedIn(true);
             setUserEmail(res.data.email);
             navigate("/", { replace: true })
@@ -134,7 +135,7 @@ function App() {
   }
 
   function handleCardLike(currentCard) {
-    const isLiked = currentCard.likes.some(user => user._id === currentUser._id);
+    const isLiked = currentCard.likes.some(user => user === currentUser._id);
     const changeLikeCardStatus = isLiked ? api.dislikeCard : api.likeCard;
 
     changeLikeCardStatus.bind(api)(currentCard._id)

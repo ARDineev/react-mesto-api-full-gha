@@ -68,6 +68,7 @@ class Api {
 export const api = new Api({
   //объект для взаимодействия с сервером
   baseUrl: 'https://api.mesto-cats.nomoredomainsrocks.ru',
+ // baseUrl: 'http://localhost:3001',
   headers: {
     'Content-Type': 'application/json'
   }
