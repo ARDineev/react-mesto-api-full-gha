@@ -46,24 +46,24 @@ function App() {
   usePopupClose(popupIsOpen, closeAllPopups);
 
   React.useEffect(() => {
-    api.getInitialCards()
+    loggedIn && api.getInitialCards()
       .then((initialCards) => {
         setCards(initialCards);
       })
       .catch((err) => {
         console.log('Ошибка при загрузке карточек', err);
       })
-  }, [])
+  }, [loggedIn])
 
   React.useEffect(() => {
-    api.getUserInformation()
+    loggedIn && api.getUserInformation()
       .then((userData) => {
         setCurrentUser(userData);
       })
       .catch((err) => {
         console.log('Ошибка при получении данных о пользователе', err);
       })
-  }, [])
+  }, [loggedIn])
 
   React.useEffect(() => {
     logInByToken();
